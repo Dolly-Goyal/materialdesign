@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include android:id="@+id/app_bar" layout="@layout/app_bar">
+
+    </include>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFCCBC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>rameLayout
+        <fragment
+            android:layout_width="@dimen/nav_drawer_width"
+            android:id="@+id/navigation_drawer_fragment"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigationfragment"
+            android:name="com.slidenerd.material_design.navigationfragment"
+            tools:layout="@layout/fragment_navigationfragment"></fragment>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
